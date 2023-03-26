@@ -10,7 +10,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.yupi</groupId>
-    <artifactId>yu-auto-reply</artifactId>
+    <artifactId>ai-auto-reply</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>yu-auto-reply</name>
     <properties>
