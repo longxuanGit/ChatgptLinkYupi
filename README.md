@@ -1,4 +1,4 @@
-# yu-auto-reply 自动回复
+# aiReply 自动回复
 
 > 作者：[程序员鱼皮](https://github.com/liyupi)
 > 
