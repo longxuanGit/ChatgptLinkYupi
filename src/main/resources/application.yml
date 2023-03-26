@@ -14,22 +14,22 @@ server:
 # https://platform.openai.com/docs/api-reference
 openai:
   model: ${OPENAI_MODEL:text-davinci-003}
-  apiKey: ${OPENAI_API_KEY:你的apiKey}
+  apiKey: ${OPENAI_API_KEY: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}
 # 知识星球配置
 # https://zsxq.com/
 zsxq:
-  cookie: ${ZSXQ_COOKIE:你的星球cookie}
-  groupId: ${ZSXQ_GROUP_ID:你的星球id}
+  cookie: ${ZSXQ_COOKIE:zsxq_access_token=C31DFEA2-155B-31F8-187C-982751D82D14_E0AB3DE713098A61; zsxqsessionid=857baeb2afeb46040872536159a51a13; abtest_env=product; sensorsdata2015jssdkcross={"distinct_id":"1871c117847d13-0a81c6ae9e62dd-26031851-3686400-1871c117848a70","first_id":"","props":{},"$device_id":"1871c117847d13-0a81c6ae9e62dd-26031851-3686400-1871c117848a70"}; sajssdk_2015_cross_new_user=1}
+  groupId: ${ZSXQ_GROUP_ID:51122858222824}
   # 是否提醒提问者
   silenced: ${ZSXQ_SILENCED:true}
 # 任务配置
 task:
   # 任务列表，支持配置多个
   list:
-    - name: task1 #任务名
+    - name: aiReply #任务名
       monitor: zsxq #监控者
       answerer: openai #回答者
-      cron: '0/30 * * * * ?' #执行周期
+      cron: '0/10 * * * * ?' #执行周期
 #    - name: task2
 #      monitor: default
 #      answerer: default
